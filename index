@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teja | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- Blobs -->
+<div class="blob matcha" style="top:-80px; left:-60px;"></div>
+<div class="blob strawberry" style="bottom:-120px; right:-40px;"></div>
+
+<nav>
+    <div class="logo"><strong>Teja</strong></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="card" style="text-align:center;">
+        <h1>Hi, I'm <span style="color:#8FAF8A;">Teja</span> 🌸</h1>
+        <p style="font-size:18px;">
+            Embedded Systems · IT & Telecommunications  
+            <br>Matcha–Strawberry inspired portfolio ✨
+        </p>
+
+        <div class="divider"></div>
+
+        <p>
+            Welcome to my portfolio! This is where I document all my engineering, coding,  
+            telecommunications, and creative tech work — past, present, and future.
+            <br><br>
+            I love minimalist design, cute tech aesthetics, and exploring how systems  
+            connect in the real world. This space grows as I continue learning.
+        </p>
+
+        <br>
+        <a href="projects.html" class="btn">View My Projects</a>
+    </div>
+
+</div>
+
+<footer>
+    Made with 🍵 matcha + 🍓 strawberry by Teja © 2025
+</footer>
+
+</body>
+</html>
