@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP Assignment (Dart)</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="blob matcha" style="top:-70px; left:-80px;"></div>
+<div class="blob strawberry" style="bottom:-90px; right:-70px;"></div>
+
+<nav>
+    <div class="logo"><strong>Teja</strong></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h1>Object-Oriented Programming (Dart)</h1>
+        <div class="divider"></div>
+
+        <p>
+            This assignment demonstrates my understanding of basic Object-Oriented Programming (OOP)
+            concepts in Dart, including classes, attributes, methods, constructors, and encapsulation.
+        </p>
+    </div>
+
+    <!-- What the program does -->
+    <div class="card">
+        <h2>🔎 Purpose of the Program</h2>
+        <p>
+            The program defines a simple class to model a real-life object (e.g., Student, Car, Product).
+            It stores information as attributes and includes methods to perform actions on those attributes.
+        </p>
+        <ul>
+            <li>Defines a class</li>
+            <li>Creates objects (instances)</li>
+            <li>Uses methods to process or display data</li>
+            <li>Demonstrates encapsulation with getters/setters</li>
+        </ul>
+    </div>
+
+    <!-- Example class -->
+    <div class="card">
+        <h2>🏷️ Example Dart Class</h2>
+<pre>
+class Student {
+  String name;
+  int age;
+  double cgpa;
+
+  // Constructor
+  Student(this.name, this.age, this.cgpa);
+
+  // Method
+  void displayInfo() {
+    print("Name: $name");
+    print("Age: $age");
+    print("CGPA: $cgpa");
+  }
+}
+</pre>
+    </div>
+
+    <!-- Creating objects -->
+    <div class="card">
+        <h2>🧍 Creating an Object</h2>
+<pre>
+void main() {
+  Student s1 = Student("Teja", 22, 3.75);
+  s1.displayInfo();
+}
+</pre>
+    </div>
+
+    <!-- OOP Concepts -->
+    <div class="card">
+        <h2>📚 OOP Concepts Demonstrated</h2>
+        <ul>
+            <li><strong>Class:</strong> A blueprint for creating objects</li>
+            <li><strong>Object:</strong> An instance of a class</li>
+            <li><strong>Attributes:</strong> Variables inside a class</li>
+            <li><strong>Methods:</strong> Functions inside a class</li>
+            <li><strong>Constructor:</strong> Special function to initialize an object</li>
+            <li><strong>Encapsulation:</strong> Getter and setter methods</li>
+        </ul>
+    </div>
+
+    <!-- Encapsulation Example -->
+    <div class="card">
+        <h2>🔒 Encapsulation Example</h2>
+<pre>
+class BankAccount {
+  double _balance = 0;
+
+  // Getter
+  double get balance => _balance;
+
+  // Setter with validation
+  void deposit(double amount) {
+    if (amount > 0) {
+      _balance += amount;
+    }
+  }
+}
+</pre>
+    </div>
+
+    <!-- Flowchart -->
+    <div class="card">
+        <h2>🔄 Flowchart of Program Flow</h2>
+<pre>
+       ┌──────────────────┐
+       │      START        │
+       └───────┬──────────┘
+               ↓
+   ┌────────────────────────┐
+   │  Define Class           │
+   └───────┬────────────────┘
+           ↓
+   ┌────────────────────────┐
+   │  Create Object (new)   │
+   └───────┬────────────────┘
+           ↓
+   ┌────────────────────────┐
+   │  Call Methods          │
+   └───────┬────────────────┘
+           ↓
+       ┌──────────────┐
+       │     END       │
+       └──────────────┘
+</pre>
+    </div>
+
+    <!-- Lessons -->
+    <div class="card">
+        <h2>📚 Lessons Learned</h2>
+        <ul>
+            <li>How to design a class structure</li>
+            <li>Creating reusable code using OOP</li>
+            <li>Understanding privacy with getters/setters</li>
+            <li>Basic debugging and printing output</li>
+        </ul>
+    </div>
+
+    <!-- Improvements -->
+    <div class="card">
+        <h2>✨ Future Improvements</h2>
+        <ul>
+            <li>Create multiple interacting classes</li>
+            <li>Implement inheritance and polymorphism</li>
+            <li>Expand into a full Dart or Flutter application</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    Made with 🍵 matcha + 🍓 strawberry by Teja © 2025
+</footer>
+
+</body>
+</html>
