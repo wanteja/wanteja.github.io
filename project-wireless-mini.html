@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wireless Mini Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="blob matcha" style="top:-60px; right:-80px;"></div>
+<div class="blob strawberry" style="bottom:-80px; left:-60px;"></div>
+
+<nav>
+    <div class="logo"><strong>Teja</strong></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h1>Wireless Mini Project</h1>
+        <div class="divider"></div>
+        <p>
+            A small-scale embedded system project exploring wireless communication 
+            between microcontroller-based devices. The goal was to understand 
+            wireless modules, signal transmission, and data handling.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📸 Photos Coming Soon</h2>
+        <p>You can upload images into <code>assets/img/projects/</code> later.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔎 Objective</h2>
+        <ul>
+            <li>Learn how wireless modules communicate.</li>
+            <li>Send and receive data between two devices.</li>
+            <li>Understand signal strength and reliability.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🔌 Hardware Used</h2>
+        <ul>
+            <li>Arduino Uno (x2)</li>
+            <li>Wireless RF modules (e.g., 433MHz, NRF24L01, or similar)</li>
+            <li>LED indicators</li>
+            <li>Buzzer (optional)</li>
+            <li>Power supply</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>📡 System Diagram</h2>
+
+<pre>
+     [ Arduino A ] ---- RF Transmit ---> [ Arduino B ]
+</pre>
+
+    </div>
+
+    <div class="card">
+        <h2>🔄 Flowchart</h2>
+
+<pre>
+         ┌──────────────┐
+         │    START      │
+         └──────┬───────┘
+                ↓
+     ┌─────────────────────────┐
+     │ Initialize RF module    │
+     └────────┬────────────────┘
+              ↓
+     ┌─────────────────────────┐
+     │ Send or receive data    │
+     └────────┬────────────────┘
+              ↓
+     ┌─────────────────────────┐
+     │ Data received?          │── No → Loop
+     └────────┬────────────────┘
+              ↓ Yes
+     ┌─────────────────────────┐
+     │ Activate output (LED)   │
+     └────────┬────────────────┘
+              ↓
+         ┌──────────────┐
+         │      END      │
+         └──────────────┘
+</pre>
+
+    </div>
+
+    <div class="card">
+        <h2>💻 Example Code Snippet</h2>
+<pre>
+// Pseudocode for a simple RF send
+radio.write(&data, sizeof(data));
+</pre>
+
+<pre>
+// Pseudocode for receiving
+if (radio.available()) {
+   radio.read(&incoming, sizeof(incoming));
+}
+</pre>
+
+    </div>
+
+    <div class="card">
+        <h2>📚 Lessons Learned</h2>
+        <ul>
+            <li>Basics of wireless communication modules</li>
+            <li>Understanding interference and signal delay</li>
+            <li>Debugging communication errors</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    Made with 🍵 matcha + 🍓 strawberry by Teja © 2025
+</footer>
+
+</body>
+</html>
