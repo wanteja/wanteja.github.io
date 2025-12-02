@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Record System (C)</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="blob matcha" style="top:-60px; left:-70px;"></div>
+<div class="blob strawberry" style="bottom:-80px; right:-80px;"></div>
+
+<nav>
+    <div class="logo"><strong>Teja</strong></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h1>Student Record System (C Language)</h1>
+        <div class="divider"></div>
+        <p>
+            A console-based application written in C that manages a student database using CSV files.  
+            The system allows adding, viewing, editing, deleting, and searching student records.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📸 Screenshots Coming Soon</h2>
+        <p>You may upload terminal screenshots later in <code>assets/img/projects/</code>.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔎 Objective</h2>
+        <ul>
+            <li>Practice file handling in C</li>
+            <li>Work with structured data (struct)</li>
+            <li>Build a functional console menu system</li>
+            <li>Understand CRUD operations (Create, Read, Update, Delete)</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🧩 System Features</h2>
+        <ul>
+            <li>Add new student records</li>
+            <li>View all records</li>
+            <li>Search records by name, ID, IC number</li>
+            <li>Edit existing records</li>
+            <li>Delete records</li>
+            <li>CSV file used as permanent storage</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🗂️ Data Structure</h2>
+
+<pre>
+struct Student {
+    char id[10];
+    char name[50];
+    char ic[15];
+    float cgpa;
+};
+</pre>
+
+    </div>
+
+    <div class="card">
+        <h2>🔄 Program Flowchart</h2>
+
+<pre>
+                 ┌──────────────┐
+                 │    START      │
+                 └───────┬──────┘
+                         ↓
+            ┌─────────────────────────┐
+            │ Display Main Menu       │
+            └───────┬─────────────────┘
+                    ↓
+         ┌──────────────────────────────┐
+         │ User selects menu option     │
+         └───────┬──────────────────────┘
+                 ↓
+      ┌─────────────────────────────────────────┐
+      │ Add / View / Search / Edit / Delete     │
+      └───────┬─────────────────────────────────┘
+              ↓
+         ┌──────────────────────────────┐
+         │ Save changes to CSV file     │
+         └───────┬──────────────────────┘
+                 ↓
+             ┌────────────┐
+             │   EXIT      │
+             └────────────┘
+</pre>
+
+    </div>
+
+    <div class="card">
+        <h2>💻 Example Code Snippets</h2>
